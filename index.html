@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors!</title>
+</head>
+
+<body>
+    <main>
+        <section class="gameDisplay">
+            <h1>Let's Play!</h1>
+            <div class="computerOutput">
+                <textarea id="display" disabled></textarea>
+            </div>
+            <div class="gameOutput">
+                <textarea id="gameResult" disabled></textarea>
+            </div>
+
+            <div class="gameOptions">
+                <div class="rockButton">
+                    <button onclick="rock()">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6685/6685683.png" alt="rock icon">
+                    </button>
+                    <h3>ROCK!</h3>
+                </div>
+
+                <div class="paperButton">
+                    <button onclick="paper()">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3152/3152875.png" alt="Paper icon">
+                    </button>
+                    <h3>PAPER!</h3>
+                </div>
+
+                <div class="scissorsButton">
+                    <button onclick="scissors()">
+                        <img src="Scissors.png" alt="Scissors icon">
+                    </button>
+                    <h3>SCISSORS!</h3>
+                </div>
+
+            </div>
+
+            <section class="gameScore">
+                <textarea id="win" disabled></textarea>
+                <textarea id="loose" disabled></textarea>
+                <textarea id="tie" disabled></textarea>
+                <button id="resetGame" onclick="resetGame()">Reset Game</button>
+            </section>
+            <div class="usahanaIcon">
+                <img
+                    src="https://64.media.tumblr.com/236e5cff1a9f254bca25e55e66fec0fe/00003108541f4a6c-da/s500x750/0ec555b039ead06e17f39807ddbf99edeaebb532.png">
+            </div>
+
+        </section>
+
+
+        <script src="script.js"></script>
+    </main>
+</body>
+
+</html>

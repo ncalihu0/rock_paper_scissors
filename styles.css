@@ -1,0 +1,146 @@
+html,
+body,
+main,
+section {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+main {
+    background: #FCECEC;
+}
+
+section.gameDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameDisplay h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 5rem;
+    margin: 3% 0 0;
+    color: #7F7F7F;
+}
+
+.computerOutput {
+    display: flex;
+}
+
+#display,
+#gameResult,
+#win,
+#loose,
+#tie,
+#resetGame {
+    border: 0;
+    background: none;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #292727;
+    resize: none;
+}
+
+#resetGame {
+    cursor: pointer;
+    border: 1px solid;
+}
+
+#display {
+    width: 70vw;
+    margin: 3%;
+    padding: 0;
+}
+
+#gameResult {
+    padding: 0 0 15%;
+}
+
+
+.gameOptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gameOptions h3 {
+    text-align: center;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 2.5rem;
+    color: #7F7F7F;
+}
+
+.gameOptions button {
+    border: 0;
+    background: none;
+    padding: 0;
+}
+
+button img {
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+}
+
+button img:hover {
+    opacity: 0.5;
+}
+
+.scissorsButton,
+.paperButton,
+.rockButton {
+    display: flex;
+    flex-direction: column;
+}
+
+.gameScore {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    align-items: center;
+}
+
+.gameScore textarea {
+    height: 15%;
+}
+
+.usahanaIcon {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.usahanaIcon img {
+    width: 40%;
+    height: 40%;
+}
+
+@media (max-width: 550px) {
+    .gameDisplay h1 {
+        font-size: 2rem;
+    }
+
+    .gameOptions {
+        grid-template-columns: 1fr;
+    }
+
+    .gameOptions h3 {
+        font-size: 1rem;
+    }
+
+    #display,
+    #gameResult,
+    #win,
+    #loose,
+    #tie,
+    #resetGame {
+        font-size: 1rem;
+    }
+
+    .usahanaIcon img {
+        width: 20%;
+        height: 20%;
+    }
+}
